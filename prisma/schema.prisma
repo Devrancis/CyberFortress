@@ -1,0 +1,91 @@
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  CLIENT          
+  CONSULTANT        
+  LEAD_CONSULTANT   
+}
+
+// 2. The NextAuth User Table
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  password      String?
+  role          Role      @default(CLIENT) // Defaults to standard client for security
+  
+  accounts      Account[]
+  sessions      Session[]
+  tickets       Ticket[] 
+}
+
+model Ticket {
+  id          String   @id @default(cuid())
+  issue       String   @db.Text
+  aiResponse  String?  @db.Text
+  needsHuman  Boolean  @default(false)
+  status      String   @default("OPEN")
+  createdAt   DateTime @default(now())
+  
+  // Connects the ticket to the specific user who submitted it
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+
+  messages    Message[]
+}
+
+// 4. NextAuth System Tables (Required for OAuth/Sessions)
+model Account {
+  id                 String  @id @default(cuid())
+  userId             String
+  type               String
+  provider           String
+  providerAccountId  String
+  refresh_token      String?  @db.Text
+  access_token       String?  @db.Text
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String?  @db.Text
+  session_state      String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Message {
+  id          String   @id @default(cuid())
+  text        String   @db.Text
+  sender      String   // Will be either "CLIENT" or "CONSULTANT"
+  createdAt   DateTime @default(now())
+  
+  ticketId    String
+  ticket      Ticket   @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+}
