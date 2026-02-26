@@ -44,7 +44,7 @@ function NavbarContent() {
           
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className={`text-2xl font-black tracking-tighter transition-colors ${theme.logoText}`}>
-              Cyber<span className={theme.logoAccent}>Shield</span>
+              Cyber<span className={theme.logoAccent}>Fortress</span>
             </Link>
           </div>
 

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
-import { sendCyberShieldEmail } from "@/utils/emailService"; 
+import { sendCyberFortressEmail } from "@/utils/emailService"; 
 
 const prisma = new PrismaClient();
 
@@ -50,9 +50,9 @@ export async function POST(req) {
 
 
     if (newTicket.status === "AI_RESOLVED") {
-      sendCyberShieldEmail(email, "AI_RESOLVED", newTicket.id);
+      sendCyberFortressEmail(email, "AI_RESOLVED", newTicket.id);
     } else if (newTicket.status === "PENDING") {
-      sendCyberShieldEmail(email, "PENDING_REMINDER", newTicket.id);
+      sendCyberFortressEmail(email, "PENDING_REMINDER", newTicket.id);
     }
 
     return NextResponse.json({ success: true, ticket: newTicket });
@@ -77,9 +77,9 @@ export async function PUT(req) {
     });
 
     if (newStatus === "SCHEDULED") {
-      sendCyberShieldEmail(updatedTicket.user.email, "SCHEDULED", updatedTicket.id);
+      sendCyberFortressEmail(updatedTicket.user.email, "SCHEDULED", updatedTicket.id);
     } else if (newStatus === "HUMAN_RESOLVED") {
-      sendCyberShieldEmail(updatedTicket.user.email, "HUMAN_RESOLVED", updatedTicket.id);
+      sendCyberFortressEmail(updatedTicket.user.email, "HUMAN_RESOLVED", updatedTicket.id);
     }
 
     return NextResponse.json({ success: true, ticket: updatedTicket });

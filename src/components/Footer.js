@@ -31,7 +31,7 @@ function FooterContent() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
         
         <div className={`text-sm font-medium ${theme.text}`}>
-          &copy; {new Date().getFullYear()} CyberShield. Empowering African Enterprises.
+          &copy; {new Date().getFullYear()} CyberFortress. Empowering African Enterprises.
         </div>
         
         <div className="flex gap-8">

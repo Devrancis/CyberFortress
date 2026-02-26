@@ -8,20 +8,20 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export const sendCyberShieldEmail = async (toEmail, type, ticketId = null) => {
+export const sendCyberFortressEmail = async (toEmail, type, ticketId = null) => {
   let subject = "";
   let html = "";
 
   switch (type) {
     case "WELCOME":
-      subject = "Welcome to CyberShield SOC";
+      subject = "Welcome to CyberFortress SOC";
       html = `
         <div style="font-family: sans-serif; color: #1e293b;">
-          <h2 style="color: #0284c7;">Welcome to CyberShield</h2>
+          <h2 style="color: #0284c7;">Welcome to CyberFortress</h2>
           <p>Your enterprise security account is now active. You have full access to our Tier 1 AI Security Analyst and our Lead Consultant SOC team.</p>
           <p>If you experience any network anomalies, report them immediately in your Command Center.</p>
           <br/>
-          <p>Stay Secure,<br/><strong>The CyberShield Team</strong></p>
+          <p>Stay Secure,<br/><strong>The CyberFortress Team</strong></p>
         </div>
       `;
       break;
@@ -34,7 +34,7 @@ export const sendCyberShieldEmail = async (toEmail, type, ticketId = null) => {
           <p>Your recent security query (Ticket: ${ticketId.slice(-6)}) was analyzed and successfully resolved by our AI framework.</p>
           <p>No further action is required on your part. You can view the full telemetry log in your dashboard.</p>
           <br/>
-          <p>Stay Secure,<br/><strong>The CyberShield Team</strong></p>
+          <p>Stay Secure,<br/><strong>The CyberFortress Team</strong></p>
         </div>
       `;
       break;
@@ -45,9 +45,9 @@ export const sendCyberShieldEmail = async (toEmail, type, ticketId = null) => {
         <div style="font-family: sans-serif; color: #1e293b;">
           <h2 style="color: #ea580c;">Critical Threat Pending</h2>
           <p>Our AI has detected a high-severity anomaly requiring human escalation (Ticket: ${ticketId.slice(-6)}).</p>
-          <p><strong>Please log into your CyberShield Command Center immediately and click "Schedule Call" to book an emergency slot with our Lead Consultant.</strong></p>
+          <p><strong>Please log into your CyberFortress Command Center immediately and click "Schedule Call" to book an emergency slot with our Lead Consultant.</strong></p>
           <br/>
-          <p>Time is of the essence.<br/><strong>The CyberShield Team</strong></p>
+          <p>Time is of the essence.<br/><strong>The CyberFortress Team</strong></p>
         </div>
       `;
       break;
@@ -60,7 +60,7 @@ export const sendCyberShieldEmail = async (toEmail, type, ticketId = null) => {
           <p>You have successfully scheduled a secure consultation for Ticket: ${ticketId.slice(-6)}.</p>
           <p>Our Lead Consultant has been notified and will connect with you at the chosen time to mitigate the anomaly.</p>
           <br/>
-          <p>Stay Secure,<br/><strong>The CyberShield Team</strong></p>
+          <p>Stay Secure,<br/><strong>The CyberFortress Team</strong></p>
         </div>
       `;
       break;
@@ -73,7 +73,7 @@ export const sendCyberShieldEmail = async (toEmail, type, ticketId = null) => {
           <p>Your Lead Security Consultant has successfully mitigated and closed your threat report (Ticket: ${ticketId.slice(-6)}).</p>
           <p>If you have any further questions regarding this incident, you can review the secure thread in your dashboard.</p>
           <br/>
-          <p>Stay Secure,<br/><strong>The CyberShield Team</strong></p>
+          <p>Stay Secure,<br/><strong>The CyberFortress Team</strong></p>
         </div>
       `;
       break;
@@ -81,7 +81,7 @@ export const sendCyberShieldEmail = async (toEmail, type, ticketId = null) => {
 
   try {
     await transporter.sendMail({
-      from: `"CyberShield Security" <${process.env.EMAIL_USER}>`,
+      from: `"CyberFortress Security" <${process.env.EMAIL_USER}>`,
       to: toEmail,
       subject,
       html,

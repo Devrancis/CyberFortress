@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import Providers from '@/components/Providers';
 
 export const metadata = {
-  title: 'CyberShield | Enterprise SOC',
+  title: 'CyberFortress | Enterprise SOC',
   description: 'Next-Generation Managed Cybersecurity for SMEs',
 };
 

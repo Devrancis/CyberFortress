@@ -9,7 +9,7 @@ export default function HeroSlider() {
     {
       url: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       alt: "Smiling female business owner",
-      quote: '"CyberShield caught the phishing attempt before it even reached my inbox. Total peace of mind."',
+      quote: '"CyberFortress caught the phishing attempt before it even reached my inbox. Total peace of mind."',
       author: "- Amina Y. CEO of LogisticsPro"
     },
     {

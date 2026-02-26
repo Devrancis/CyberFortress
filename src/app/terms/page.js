@@ -32,7 +32,7 @@ export default function TermsOfService() {
                 Acceptance of Terms
               </h2>
               <p>
-                By accessing and utilizing the CyberShield Security Operations Center (SOC) dashboard, threat intelligence feeds, and consultancy services, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you are prohibited from utilizing our infrastructure.
+                By accessing and utilizing the CyberFortress Security Operations Center (SOC) dashboard, threat intelligence feeds, and consultancy services, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you are prohibited from utilizing our infrastructure.
               </p>
             </section>
 
@@ -42,7 +42,7 @@ export default function TermsOfService() {
                 Service Level Agreement (SLA)
               </h2>
               <p>
-                CyberShield commits to a 99.9% uptime for our AI triage systems. However, critical threat neutralization times may vary based on the complexity of the zero-day exploit or lateral movement within your specific network architecture. We are not liable for data loss resulting from breaches that occurred prior to the deployment of our continuous monitoring agents.
+                CyberFortress commits to a 99.9% uptime for our AI triage systems. However, critical threat neutralization times may vary based on the complexity of the zero-day exploit or lateral movement within your specific network architecture. We are not liable for data loss resulting from breaches that occurred prior to the deployment of our continuous monitoring agents.
               </p>
             </section>
 
@@ -52,9 +52,9 @@ export default function TermsOfService() {
                 Client Responsibilities
               </h2>
               <ul className="list-disc pl-6 space-y-2 mt-4 text-slate-600">
-                <li>Maintain the confidentiality of all API keys and NextAuth session tokens provided by CyberShield.</li>
+                <li>Maintain the confidentiality of all API keys and NextAuth session tokens provided by CyberFortress.</li>
                 <li>Immediately report any suspected compromise of Lead Consultant or standard Client credentials.</li>
-                <li>Ensure that all endpoints connected to the CyberShield node have the latest OS patches applied.</li>
+                <li>Ensure that all endpoints connected to the CyberFortress node have the latest OS patches applied.</li>
               </ul>
             </section>
 

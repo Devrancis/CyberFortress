@@ -13,7 +13,7 @@ export async function POST(req) {
         generationConfig: { responseMimeType: "application/json" }
     });
 
-    const prompt = `You are CyberShield's elite Tier 1 AI Security Analyst. 
+    const prompt = `You are CyberFortress's elite Tier 1 AI Security Analyst. 
     A client just reported this security anomaly: "${issue}"
     
     Task:

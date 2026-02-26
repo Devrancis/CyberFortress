@@ -86,7 +86,7 @@ function LoginForm() {
           <p className={`text-sm mt-2 ${theme.textSecondary}`}>
             {isConsultant 
               ? "Authorized SOC personnel only." 
-              : (isLogin ? "Secure access to your enterprise dashboard." : "Register to deploy CyberShield for your SME.")}
+              : (isLogin ? "Secure access to your enterprise dashboard." : "Register to deploy CyberFortress for your SME.")}
           </p>
         </div>
 
@@ -109,7 +109,7 @@ function LoginForm() {
             <label className={`block text-sm font-semibold mb-1.5 ${theme.textSecondary}`}>Official Email</label>
             <input type="email" name="email" value={formData.email} onChange={handleChange} required
               className={`w-full border rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 transition-colors ${theme.inputBg}`}
-              placeholder={isConsultant ? "analyst@cybershield.com" : "admin@company.com"} />
+              placeholder={isConsultant ? "analyst@cyberfortress.com" : "admin@company.com"} />
           </div>
 
           <div>

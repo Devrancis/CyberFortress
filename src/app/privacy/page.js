@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
                 Data Collection Architecture
               </h2>
               <p>
-                CyberShield operates on a zero-trust, privacy-first architecture. When you register via our NextAuth portal, we collect only strictly necessary cryptographic identifiers, including your hashed credentials, professional email, and designated role (Client or Consultant). We do not store plaintext passwords under any circumstances.
+                CyberFortress operates on a zero-trust, privacy-first architecture. When you register via our NextAuth portal, we collect only strictly necessary cryptographic identifiers, including your hashed credentials, professional email, and designated role (Client or Consultant). We do not store plaintext passwords under any circumstances.
               </p>
             </section>
 
@@ -52,7 +52,7 @@ export default function PrivacyPolicy() {
                 Third-Party Integrations
               </h2>
               <p>
-                If you authenticate using external providers (such as Google OAuth), we process your public profile data solely for session validation. CyberShield will never sell, lease, or distribute your corporate telemetry or personal data to unauthorized third-party marketing entities.
+                If you authenticate using external providers (such as Google OAuth), we process your public profile data solely for session validation. CyberFortress will never sell, lease, or distribute your corporate telemetry or personal data to unauthorized third-party marketing entities.
               </p>
             </section>
 

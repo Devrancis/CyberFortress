@@ -300,7 +300,7 @@ export default function ClientDashboard() {
                   Critical Threat: Please schedule an emergency consultation below.
                 </h4>
                 <div className="bg-white rounded-2xl overflow-hidden h-[600px] w-full shadow-inner border border-orange-900/50 relative">
-                  <iframe src="https://calendly.com/francisiyiola/cyber-shield-solutions" width="100%" height="100%" frameBorder="0"></iframe>
+                  <iframe src="https://calendly.com/francisiyiola/cyber-fortress-solutions" width="100%" height="100%" frameBorder="0"></iframe>
                 </div>
               </div>
             )}
@@ -342,7 +342,7 @@ export default function ClientDashboard() {
               {activeChatTicket.messages?.map((msg) => (
                 <div key={msg.id} className={`flex flex-col ${msg.sender === 'CLIENT' ? 'items-end' : 'items-start'}`}>
                   <span className="text-[10px] font-bold text-slate-400 mb-1 mx-1">
-                    {msg.sender === 'CLIENT' ? 'YOU' : 'CYBERSHIELD SOC'}
+                    {msg.sender === 'CLIENT' ? 'YOU' : 'CYBERFORTRESS SOC'}
                   </span>
                   <div className={`p-4 rounded-2xl max-w-[85%] shadow-sm ${
                     msg.sender === 'CLIENT' 
@@ -392,7 +392,7 @@ export default function ClientDashboard() {
             </button>
             <h3 className="text-2xl font-bold mb-6 text-white">Schedule Security Consultation</h3>
             <div className="bg-white rounded-2xl overflow-hidden h-[500px] w-full mb-6">
-              <iframe src="https://calendly.com/francisiyiola/cyber-shield-solutions" width="100%" height="100%" frameBorder="0"></iframe>
+              <iframe src="https://calendly.com/francisiyiola/cyber-fortress-solutions" width="100%" height="100%" frameBorder="0"></iframe>
             </div>
             <div className="flex justify-end border-t border-slate-800 pt-6">
               <button onClick={() => markAsScheduled(schedulingTicket.id)} className="px-8 py-4 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl transition-colors shadow-lg shadow-purple-600/20">

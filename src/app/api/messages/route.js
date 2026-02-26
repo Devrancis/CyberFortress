@@ -27,14 +27,14 @@ export async function POST(req) {
     if (isCriticalAlert) {
       try {
         await transporter.sendMail({
-          from: `"CyberShield SOC" <${process.env.EMAIL_USER}>`,
+          from: `"CyberFortress SOC" <${process.env.EMAIL_USER}>`,
           to: "francisiyiola@gmail.com", 
           subject: "🚨 URGENT: Critical Client Threat Updated",
           html: `
             <h2 style="color: #ef4444;">Critical Threat Alert</h2>
             <p><strong>Ticket ID:</strong> ${ticketId}</p>
             <p><strong>Client Update:</strong> ${text}</p>
-            <p>Please log in to the CyberShield Consultant Dashboard immediately to respond.</p>
+            <p>Please log in to the CyberFortress Consultant Dashboard immediately to respond.</p>
           `,
         });
         console.log("Alert email sent successfully.");

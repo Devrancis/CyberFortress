@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs"; 
-import { sendCyberShieldEmail } from "@/utils/emailService"; 
+import { sendCyberFortressEmail } from "@/utils/emailService"; 
 
 const prisma = new PrismaClient();
 
@@ -30,7 +30,7 @@ export async function POST(req) {
     });
 
     try {
-      await sendCyberShieldEmail(newUser.email, "WELCOME");
+      await sendCyberFortressEmail(newUser.email, "WELCOME");
     } catch (emailError) {
       console.error("Welcome email failed to send:", emailError);
     }

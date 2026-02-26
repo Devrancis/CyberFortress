@@ -44,7 +44,7 @@ export default function Home() {
               <span className="text-cyan-400">Scaled for Your Business.</span>
             </h1>
             <p className="text-lg text-slate-300 max-w-lg mx-auto md:mx-0 leading-relaxed">
-              CyberShield combines instant AI threat triage with elite human consultants to protect your operations, so you can focus on growth.
+              CyberFortress combines instant AI threat triage with elite human consultants to protect your operations, so you can focus on growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               {/* Changed href to route to the client-specific login */}
@@ -210,7 +210,7 @@ export default function Home() {
       <section className="bg-cyan-600 py-20 px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Fortify Your Business?</h2>
         <p className="text-cyan-100 mb-10 max-w-2xl mx-auto text-lg">
-          Don't wait for a breach to realize the importance of proactive security. Partner with CyberShield today.
+          Don't wait for a breach to realize the importance of proactive security. Partner with CyberFortress today.
         </p>
         <Link href="/client" className="bg-white text-cyan-800 hover:bg-slate-100 px-10 py-4 rounded-lg font-bold text-lg shadow-xl transition-all inline-block">
           Start Your Free Trial

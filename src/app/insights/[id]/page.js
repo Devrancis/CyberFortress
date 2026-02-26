@@ -6,7 +6,7 @@ const fullBlogPosts = {
     category: "Infrastructure",
     date: "Feb 18, 2026",
     readTime: "4 min read",
-    author: "CyberShield Threat Intel Team",
+    author: "CyberFortress Threat Intel Team",
     content: (
       <>
         <p>For decades, Small and Medium Enterprises (SMEs) relied on the "castle and moat" security model. You build a strong perimeter (a firewall), and you trust everything inside. Today, this model is dangerously obsolete.</p>
@@ -19,7 +19,7 @@ const fullBlogPosts = {
           <li><strong>Least Privilege Access:</strong> Employees only have access to the specific data required for their immediate tasks. If the marketing account is compromised, the HR payroll data remains locked.</li>
           <li><strong>Micro-segmentation:</strong> Dividing the network into secure zones, preventing a localized breach from becoming a total system failure.</li>
         </ul>
-        <p className="mt-6">At CyberShield, our AI-driven SOC automatically enforces Zero-Trust principles across your entire organization, ensuring that a single stolen password never leads to a total network collapse.</p>
+        <p className="mt-6">At CyberFortress, our AI-driven SOC automatically enforces Zero-Trust principles across your entire organization, ensuring that a single stolen password never leads to a total network collapse.</p>
       </>
     )
   },
@@ -28,7 +28,7 @@ const fullBlogPosts = {
     category: "Human Firewall",
     date: "Feb 12, 2026",
     readTime: "6 min read",
-    author: "CyberShield Threat Intel Team",
+    author: "CyberFortress Threat Intel Team",
     content: (
       <>
         <p>Human error remains the number one cause of data breaches globally. While traditional phishing emails were easy to spot—riddled with typos and strange requests—the landscape has evolved. Enter AI-generated spear phishing.</p>
@@ -42,7 +42,7 @@ const fullBlogPosts = {
           <li><strong>Implement Mandatory MFA:</strong> Multi-Factor Authentication ensures that even if an employee gives away their password, the attacker still cannot access the account.</li>
           <li><strong>Verification Protocols:</strong> Institute a strict policy where any unexpected request for wire transfers or sensitive data must be verified via a secondary channel (e.g., a phone call).</li>
         </ul>
-        <p className="mt-6">CyberShield provides continuous, automated phishing simulations and real-time email scanning to intercept these next-gen threats before they reach your employees' inboxes.</p>
+        <p className="mt-6">CyberFortress provides continuous, automated phishing simulations and real-time email scanning to intercept these next-gen threats before they reach your employees' inboxes.</p>
       </>
     )
   },
@@ -51,7 +51,7 @@ const fullBlogPosts = {
     category: "Threat Intelligence",
     date: "Feb 05, 2026",
     readTime: "5 min read",
-    author: "CyberShield Incident Response",
+    author: "CyberFortress Incident Response",
     content: (
       <>
         <p>Ransomware is no longer just a virus that locks your screen; it is a multi-million dollar corporate enterprise. Modern ransomware gangs operate with Help Desks, HR departments, and affiliate programs. And their new favorite targets? Small and Medium Enterprises (SMEs).</p>
@@ -61,7 +61,7 @@ const fullBlogPosts = {
         <p>Today’s ransomware doesn't just encrypt your files; it steals them first. If you refuse to pay the ransom to unlock your systems, the hackers threaten to leak your sensitive customer data on the dark web, triggering massive regulatory fines and destroying your business reputation.</p>
         <h3 className="text-2xl font-bold text-slate-900 mt-8 mb-4">The 15-Minute Rule</h3>
         <p>When an initial payload is executed, the encryption process can spread across a network in minutes. Human reaction time is too slow. You have roughly a 15-minute window to isolate the compromised node before the entire network falls.</p>
-        <p className="mt-6">This is why CyberShield utilizes AI-driven instant triage. The moment our systems detect anomalous encryption behaviors, the AI automatically severs the infected machine from the network, containing the blast radius and notifying our human consultants to begin remediation.</p>
+        <p className="mt-6">This is why CyberFortress utilizes AI-driven instant triage. The moment our systems detect anomalous encryption behaviors, the AI automatically severs the infected machine from the network, containing the blast radius and notifying our human consultants to begin remediation.</p>
       </>
     )
   }
