@@ -6,6 +6,9 @@ import Providers from '@/components/Providers';
 export const metadata = {
   title: 'CyberFortress | Enterprise SOC',
   description: 'Next-Generation Managed Cybersecurity for SMEs',
+  icons: {
+    icon: '/icon.png',
+  },
 };
 
 export default function RootLayout({ children }) {
